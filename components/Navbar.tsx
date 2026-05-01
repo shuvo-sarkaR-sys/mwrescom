@@ -15,7 +15,7 @@ export default function Navbar() {
   }, [])
 
   const links = [
-    { href: '/', label: 'Home' },
+    { href: '/home', label: 'Home' },
     { href: '/about', label: 'About Us' },
     { href: '/services', label: 'Services' },
     { href: '/service-area', label: 'Service Area' },
@@ -25,7 +25,7 @@ export default function Navbar() {
   return (
     <>
       <nav id="navbar" className={scrolled ? 'scrolled' : ''}>
-        <Link href="/" className="nav-logo">
+        <Link href="/home" className="nav-logo">
           {/* <div className="nav-logo-icon">❄️</div>
           <div>
             <div className="nav-logo-text">M.W RESCOM</div>
