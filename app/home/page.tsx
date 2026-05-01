@@ -121,7 +121,7 @@ export default function Home() {
               ].map(f => (
                 <li key={f}><span className="check">✓</span>{f}</li>
               ))}
-            </ul>
+            </ul>      
             <div className="guarantee-box">
               <div className="guarantee-icon">🛡️</div>
               <div className="guarantee-text">
