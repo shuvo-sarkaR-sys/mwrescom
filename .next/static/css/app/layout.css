@@ -1,6 +1,7 @@
 /*!*************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/globals.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************/
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Barlow+Condensed:wght@400;600;700&display=swap');
 
 :root {
@@ -46,10 +47,9 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0 40px;
-  height: 70px;
+  height: 110px;
   background: rgba(2,15,26,0.92);
-  -webkit-backdrop-filter: blur(12px);
-          backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(10,133,194,0.25);
   transition: all 0.3s;
 }
@@ -124,6 +124,10 @@ nav.scrolled {
   color: var(--sky);
   text-decoration: none;
   font-weight: 600;
+  display:flex;
+align-items:center;
+gap: 4px;  
+
   letter-spacing: 1px;
 }
 
@@ -195,8 +199,7 @@ nav.scrolled {
   position: fixed;
   top: 70px; left: 0; right: 0;
   background: rgba(2,15,26,0.98);
-  -webkit-backdrop-filter: blur(12px);
-          backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
   z-index: 999;
   border-bottom: 1px solid rgba(10,133,194,0.2);
 }
@@ -333,11 +336,13 @@ section { position: relative; z-index: 1; }
   position: relative;
   z-index: 2;
   padding: 0 80px;
-  max-width: 700px;
+  width: 100%;
 }
 
 .slide-tag {
-  display: inline-block;
+  display:inline-flex;
+  gap:7px;
+  align-items:center;
   background: var(--orange);
   color: var(--white);
   font-size: 11px;
@@ -352,7 +357,7 @@ section { position: relative; z-index: 1; }
 .slide-title {
   font-family: 'Bebas Neue', sans-serif;
   font-size: clamp(52px, 8vw, 100px);
-  line-height: 0.92;
+  line-height: 1.1;
   letter-spacing: 2px;
   color: var(--white);
   margin-bottom: 20px;
@@ -472,8 +477,7 @@ section { position: relative; z-index: 1; }
 .why-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2px;
-  gap: 2px;
+  gap: 24px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -526,7 +530,6 @@ section { position: relative; z-index: 1; }
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 24px;
   gap: 24px;
   max-width: 1200px;
   margin: 0 auto;
@@ -624,7 +627,6 @@ section { position: relative; z-index: 1; }
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 80px;
   gap: 80px;
   align-items: center;
 }
@@ -703,7 +705,6 @@ section { position: relative; z-index: 1; }
 .testimonials-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 24px;
   gap: 24px;
   max-width: 1200px;
   margin: 0 auto;
@@ -811,7 +812,6 @@ footer {
 .footer-grid {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
-  grid-gap: 50px;
   gap: 50px;
   max-width: 1200px;
   margin: 0 auto 50px;
@@ -870,7 +870,6 @@ footer {
   padding: 80px 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 80px;
   gap: 80px;
   align-items: start;
 }
@@ -957,7 +956,6 @@ footer {
 .service-block {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 60px;
   gap: 60px;
   align-items: center;
   margin-bottom: 80px;
@@ -1021,7 +1019,6 @@ footer {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
   gap: 10px;
   margin-bottom: 28px;
 }
@@ -1062,7 +1059,6 @@ footer {
 .map-layout {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-gap: 40px;
   gap: 40px;
   align-items: start;
 }
@@ -1124,7 +1120,6 @@ footer {
 .booking-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 32px;
   gap: 32px;
   margin-top: 50px;
 }
@@ -1180,7 +1175,6 @@ textarea { resize: vertical; min-height: 120px; }
 .service-selector {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 12px;
   gap: 12px;
   grid-column: 1 / -1;
 }
@@ -1217,7 +1211,6 @@ textarea { resize: vertical; min-height: 120px; }
 .date-time-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 16px;
   gap: 16px;
   grid-column: 1 / -1;
 }
@@ -1280,7 +1273,6 @@ textarea { resize: vertical; min-height: 120px; }
   padding: 60px 40px 100px;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
-  grid-gap: 60px;
   gap: 60px;
 }
 
@@ -1354,7 +1346,6 @@ textarea { resize: vertical; min-height: 120px; }
 .cf-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
   gap: 20px;
 }
 
@@ -1392,3 +1383,76 @@ textarea { resize: vertical; min-height: 120px; }
   .footer-grid { grid-template-columns: 1fr; }
 }
 
+/* starting page start from here */
+.container{
+  display: flex;
+}
+.container div{
+  width: 50%;
+  height: 85vh;  
+  
+
+}
+
+.box-1{
+   background: url('/img-1.avif') rgba(240, 247, 255, 0.355);
+   background-position: center;
+   background-size: cover;
+  
+   position: relative;
+}
+.box-2{
+   background: url('/img-4.webp') rgba(240, 247, 255, 0.355);
+   background-position: center;
+   background-size: cover;
+  
+   position: relative;
+}
+.box-2 div{
+   position: absolute;
+  top:0px; 
+  width: 100%;
+  height: 100%;
+  background-color: #47434385;
+   text-align: center;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+}
+.box-1 div{
+  position: absolute;
+  top:0px; 
+  width: 100%;
+  height: 100%;
+  background-color: #47434385;
+   text-align: center;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+}
+.link-1 {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+   font-family: 'Bebas Neue', sans-serif;
+    letter-spacing:2px;
+  background: #ed5e05;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+.link-1:hover{
+  background: #b14807;
+  padding: 10px 20px;
+  border-radius: 4px;
+ 
+}
+.text-1{
+  font-size: 50px;
+  text-align: center;
+  color: #fff;
+  background: #00000095;
+  padding: 15px;
+   font-family: 'Bebas Neue', sans-serif;
+    letter-spacing:2px;
+}

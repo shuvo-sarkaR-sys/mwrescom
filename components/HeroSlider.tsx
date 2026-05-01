@@ -5,9 +5,9 @@ import Link from 'next/link'
 const slides = [
   {
     tag: '❄️ Season 2024–2025',
-    title: <>CLEARING<br />THE WAY<br /><span>WITH QUIET</span><br />EXCELLENCE</>,
+    title: <>CLEARING THE WAY<br /><span>WITH QUIET</span> EXCELLENCE</>,
     desc: "Halifax's most trusted snow removal & ice control service. Residential and commercial. We're there before you wake up.",
-    bg: 'linear-gradient(135deg, #020f1a 0%, #0a2a40 40%, #0a85c2 100%)',
+    bg: 'url("/img-1.avif")',
     btns: [
       { href: '/quote', label: 'Book Now', primary: true },
       { href: '/services', label: 'Our Services', primary: false },
@@ -38,10 +38,17 @@ const slides = [
     ),
   },
   {
-    tag: '🏠 Residential Service',
-    title: <>YOUR<br />DRIVEWAY<br /><span>CLEARED</span><br />BY 6AM</>,
+    tag: (
+      <>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" style={{ width: 18, height: 18 }} >
+          <path strokeLinecap="round" strokeLinejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+        </svg>
+        Residential Service
+      </>
+    ),
+    title: <>YOUR DRIVEWAY<br /><span>CLEARED</span> BY AM</>,
     desc: 'Season passes starting at $600. Full coverage from November 1 to April 1. Service begins at 5cm accumulation.',
-    bg: 'linear-gradient(135deg, #020f1a 0%, #04253a 50%, #062a40 100%)',
+    bg: 'url("/img-5.avif")',
     btns: [
       { href: '/quote', label: 'Reserve Season Pass', primary: true },
       { href: '/services', label: 'View Pricing', primary: false },
@@ -70,10 +77,17 @@ const slides = [
     ),
   },
   {
-    tag: '🏢 Commercial Service',
-    title: <>24/7<br />EMERGENCY<br /><span>ICE</span><br />CONTROL</>,
-    desc: 'Protecting your business parking lots, walkways and loading docks. Commercial contracts with priority service guaranteed.',
-    bg: 'linear-gradient(135deg, #04253a 0%, #020f1a 60%, #0a1f30 100%)',
+    tag: (
+      <>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" style={{ width: 18, height: 18 }} >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+        </svg>
+        Commercial Service
+      </>
+    ),
+    title: <>OUTDOOR<br /><span>&</span> LANDSCAPING</>,
+    desc: "Beautiful properties don't happen by accident. Our landscaping team designs, installs, and maintains outdoor spaces that enhance your home or business.",
+    bg: 'url("/img-2.avif")',
     btns: [
       { href: '/quote', label: 'Get Commercial Quote', primary: true },
       { href: '/contact', label: 'Call Us Now', primary: false },
