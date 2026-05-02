@@ -1413,6 +1413,18 @@ textarea { resize: vertical; min-height: 120px; }
 /* starting page start from here */
 .container{
   display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .container div{
+    width: 100% !important;
+    height: 45vh !important;  
+  }
 }
 .container div{
   width: 50%;
