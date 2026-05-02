@@ -222,9 +222,37 @@ gap: 4px;
 /* PAGE HERO */
 .page-hero {
   position: relative;
-  padding: 180px 80px 100px;
+  padding: 240px 80px 150px;
+  
   overflow: hidden;
-  background: linear-gradient(135deg, var(--midnight) 0%, var(--deep) 100%);
+   background: linear-gradient(135deg, var(--midnight) 0%, var(--deep) 100%);
+
+}
+.page-hero-1{
+  position: relative;
+  padding: 150px 130px 50px;
+  
+  overflow: hidden;
+ 
+}
+.about-hero{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/about.webp');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.service-hero{
+   background: 
+   
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    
+    url('/img-1.avif') left /  40% 100% no-repeat, 
+ 
+    url('/img-2.avif')  center/  35.3% 100%  no-repeat, 
+    
+    url('/img-4.webp') right / 33.3% 100% no-repeat #000; 
+    object-fit: cover;
+  
 }
 
 .page-hero::before {
@@ -247,10 +275,11 @@ gap: 4px;
 
 .page-hero-title {
   font-family: 'Bebas Neue', sans-serif;
+  /* color: var(--midnight); */
   font-size: clamp(52px, 7vw, 96px);
   letter-spacing: 2px;
   line-height: 0.9;
-  color: var(--white);
+  
 }
 
 .page-hero-title span { color: var(--sky); }
@@ -947,7 +976,7 @@ footer {
 .services-detail {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 60px 40px 100px;
+  padding: 60px 40px 0px;
 }
 
 .service-block {
@@ -1377,6 +1406,7 @@ textarea { resize: vertical; min-height: 120px; }
   .contact-form-box { padding: 30px 20px; }
   .about-content { grid-template-columns: 1fr; }
   .page-hero { padding: 140px 30px 80px; }
+  .page-hero-1{padding: 100px 50px 80px}
   .footer-grid { grid-template-columns: 1fr; }
 }
 

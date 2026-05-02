@@ -3,7 +3,7 @@ import SnowCanvas from '@/components/SnowCanvas'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import type { Metadata } from 'next'
-
+import Image from 'next/image'
 export const metadata: Metadata = {
   title: 'Our Services | M.W Residential & Commercial',
 }
@@ -14,7 +14,7 @@ export default function ServicesPage() {
       <SnowCanvas />
       <Navbar />
 
-      <div className="page-hero">
+      <div className="page-hero service-hero">
         <div className="page-hero-tag">What We Offer</div>
         <h1 className="page-hero-title">OUR <span>SERVICES</span></h1>
       </div>
@@ -26,14 +26,7 @@ export default function ServicesPage() {
           <div className="service-block">
             <div className="service-visual">
               <div className="service-visual-bg" style={{ background: 'linear-gradient(135deg, #04253a, #0a85c2)' }}>
-                <svg width="100%" height="100%" viewBox="0 0 500 340">
-                  <circle cx="400" cy="80" r="120" fill="#0a85c2" opacity="0.15"/>
-                  <text x="250" y="190" fontSize="100" textAnchor="middle" fill="white" opacity="0.25">❄️</text>
-                  <g fill="white" opacity="0.4">
-                    <circle cx="50" cy="60" r="5"/><circle cx="120" cy="120" r="4"/>
-                    <circle cx="200" cy="40" r="6"/><circle cx="80" cy="200" r="4"/>
-                  </g>
-                </svg>
+                <Image src="/img-1.avif" alt="Snow Removal Service" width={500} height={340} style={{ borderRadius: 8, width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
             </div>
             <div>
@@ -54,10 +47,7 @@ export default function ServicesPage() {
           <div className="service-block reverse">
             <div className="service-visual">
               <div className="service-visual-bg" style={{ background: 'linear-gradient(135deg, #062a10, #0f5020)' }}>
-                <svg width="100%" height="100%" viewBox="0 0 500 340">
-                  <circle cx="100" cy="280" r="120" fill="#2d8a40" opacity="0.15"/>
-                  <text x="250" y="190" fontSize="100" textAnchor="middle" fill="white" opacity="0.25">🌿</text>
-                </svg>
+                <Image src="/img-2.avif" alt="Landscaping Service" width={500} height={340} style={{ borderRadius: 8, width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
             </div>
             <div>
@@ -77,10 +67,7 @@ export default function ServicesPage() {
           <div className="service-block">
             <div className="service-visual">
               <div className="service-visual-bg" style={{ background: 'linear-gradient(135deg, #1a1000, #3a2a00)' }}>
-                <svg width="100%" height="100%" viewBox="0 0 500 340">
-                  <circle cx="250" cy="170" r="130" fill="#ffa030" opacity="0.08"/>
-                  <text x="250" y="190" fontSize="100" textAnchor="middle" fill="white" opacity="0.2">🧪</text>
-                </svg>
+                <Image src="/img-6.webp" alt="GoNano Service" width={500} height={340} style={{ borderRadius: 8, width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
             </div>
             <div>

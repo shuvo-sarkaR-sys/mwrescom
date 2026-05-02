@@ -180,7 +180,7 @@ export default function Home() {
         <h2>READY TO BOOK?</h2>
         <p>Contact us today and let us handle the weather — you handle everything else.</p>
         <Link href="/quote" className="cta-btn-white">Get a Free Quote</Link>
-        <a href="tel:9022336698" className="cta-btn-white">📞 902-233-6698</a>
+        <a href="tel:9022336698" className="cta-btn-white" style={{ marginTop: '10px' }}>📞 902-233-6698</a>
       </div>
 
       <Footer />

@@ -26,7 +26,7 @@ export default function ServiceAreaPage() {
       <SnowCanvas />
       <Navbar />
 
-      <div className="page-hero">
+      <div className="page-hero-1">
         <div className="page-hero-tag">Where We Work</div>
         <h1 className="page-hero-title">SERVICE <span>AREA</span></h1>
       </div>
@@ -39,7 +39,11 @@ export default function ServiceAreaPage() {
               <p>We proudly serve the entire Halifax Regional Municipality and surrounding communities. If you&apos;re not sure if we cover your area, give us a call — we&apos;re always looking to expand.</p>
               <ul className="area-list">
                 {areas.map(a => (
-                  <li key={a.name}><span>{a.icon}</span>{a.name}</li>
+                  <li key={a.name}><span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" style={{ width: 16, height: 16, marginRight: 6 }}>
+  <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+</svg>
+</span>{a.name}</li>
                 ))}
               </ul>
             </div>
