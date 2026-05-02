@@ -1,16 +1,12 @@
 import Link from 'next/link'
-
+import Image from 'next/image'
 export default function Footer() {
   return (
     <footer>
       <div className="footer-grid">
         <div className="footer-brand">
           <div className="nav-logo" style={{ marginBottom: 0, display: 'flex', gap: 12, alignItems: 'center' }}>
-            <div className="nav-logo-icon">❄️</div>
-            <div>
-              <div className="nav-logo-text">M.W RESCOM</div>
-              <div className="nav-logo-sub">Residential &amp; Commercial Limited</div>
-            </div>
+           <Image src="/logo-2.avif" alt="M.W RESCOM" width={120} height={100} />
           </div>
           <p>Halifax&apos;s trusted outdoor services company. Professional snow removal, ice control, and landscaping for residential and commercial properties.</p>
         </div>
