@@ -252,7 +252,18 @@ gap: 4px;
     
     url('/img-4.webp') right / 33.3% 100% no-repeat #000; 
     object-fit: cover;
+   position: relative;
+  padding: 240px 80px 150px;
   
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .service-hero {
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+      url('/img-1.avif') right 0px bottom 10px / cover no-repeat !important;
+    padding: 150px 30px 80px !important;
+  }
 }
 
 .page-hero::before {
@@ -348,6 +359,14 @@ section { position: relative; z-index: 1; }
   background-position: center;
   transform: scale(1.05);
   transition: transform 8s ease;
+  background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+  .slide-bg {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: right -250px bottom 10px !important;
+  }
 }
 
 .slide.active .slide-bg { transform: scale(1); }

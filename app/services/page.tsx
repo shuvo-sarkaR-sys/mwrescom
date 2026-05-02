@@ -14,7 +14,7 @@ export default function ServicesPage() {
       <SnowCanvas />
       <Navbar />
 
-      <div className="page-hero service-hero">
+      <div className="service-hero">
         <div className="page-hero-tag">What We Offer</div>
         <h1 className="page-hero-title">OUR <span>SERVICES</span></h1>
       </div>
