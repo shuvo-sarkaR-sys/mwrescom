@@ -122,7 +122,7 @@ import Footer from '@/components/Footer'
       </section>
 
       {/* SEASON PASS */}
-      <section className="season-section section-pad">
+      <section id='seasonpass' className="season-section section-pad">
         <div className="season-inner">
           <div>
             <div className="season-badge">🔥 Act Now &amp; Save Big!</div>

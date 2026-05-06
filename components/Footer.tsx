@@ -32,13 +32,13 @@ export default function Footer() {
           <ul className="footer-links">
             <li><Link href="/services#snowremoval">Snow Removal</Link></li>
             <li><Link href="/services#snowremoval">Ice Control </Link></li>
-            
+
+            <li><Link href="/#seasonpass">Season Pass</Link></li>
+            <li><Link href="/services#snowremoval">Salting</Link></li>
                    <li><Link href="/services#landscaping">Landscaping</Link></li>
             <li><a href="https://gonano.com/en/science" rel="noopener noreferrer">GoNano Treatment</a></li>
 
-            {[  'Salting', 'Season Pass'].map(s => (
-              <li key={s}><Link href="/services">{s}</Link></li>
-            ))}
+            
       
           </ul>
         </div>
