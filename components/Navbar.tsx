@@ -31,7 +31,7 @@ export default function Navbar() {
             <div className="nav-logo-text">M.W RESCOM</div>
             <div className="nav-logo-sub">Residential &amp; Commercial</div>
           </div> */}
-          <Image src="/logo-2.avif" alt="M.W RESCOM" width={130} height={100} />
+          <Image src="/logo-2.avif" className="nav-img" alt="M.W RESCOM" width={130} height={100} />
         </Link>
 
         <ul className="nav-links">

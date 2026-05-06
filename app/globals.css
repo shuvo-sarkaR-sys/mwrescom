@@ -62,7 +62,15 @@ nav.scrolled {
   gap: 12px;
   text-decoration: none;
 }
-
+@media (max-width: 768px) {
+  .nav-img{
+    width: 90px !important;
+     height: 70px !important;
+  }
+  nav{
+    height: 90px !important;
+  }
+}
 .nav-logo-icon {
   width: 42px; height: 42px;
   background: linear-gradient(135deg, var(--sky), var(--deep));
