@@ -30,9 +30,10 @@ export default function Footer() {
         <div className="footer-col">
           <h4>Services</h4>
           <ul className="footer-links">
-            {['Snow Removal', 'Ice Control', 'Salting', 'Landscaping', 'GoNano Treatment', 'Season Pass'].map(s => (
+            {['Snow Removal', 'Ice Control', 'Salting', 'Landscaping', 'Season Pass'].map(s => (
               <li key={s}><Link href="/services">{s}</Link></li>
             ))}
+            <li><a href="https://gonano.com/en/science" rel="noopener noreferrer">GoNano Treatment</a></li>
           </ul>
         </div>
 

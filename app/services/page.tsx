@@ -44,7 +44,7 @@ export default function ServicesPage() {
           </div>
 
           {/* Landscaping */}
-          <div className="service-block reverse">
+          <div id='landscapting' className="service-block reverse">
             <div className="service-visual">
               <div className="service-visual-bg" style={{ background: 'linear-gradient(135deg, #062a10, #0f5020)' }}>
                 <Image src="/img-2.avif" alt="Landscaping Service" width={500} height={340} style={{ borderRadius: 8, width: '100%', height: '100%', objectFit: 'cover' }} />
