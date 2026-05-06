@@ -65,10 +65,10 @@ nav.scrolled {
 @media (max-width: 768px) {
   .nav-img{
     width: 90px !important;
-     height: 65px !important;
+     height: 67px !important;
   }
   nav{
-    height: 80px !important;
+    height: 85px !important;
   }
 }
 .nav-logo-icon {
