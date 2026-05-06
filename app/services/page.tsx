@@ -78,7 +78,7 @@ export default function ServicesPage() {
                 {['Surface protection','Anti-ice coating','Long-lasting results','Eco-friendly formula'].map(i => <li key={i}>{i}</li>)}
               </ul>
               <p style={{ fontSize: 13, color: 'var(--gray)', marginBottom: 16 }}>
-                Learn more about the science at <strong style={{ color: 'var(--sky)' }}>gonano.com</strong>
+                Learn more about the science at <strong ><a style={{ color: 'var(--sky)' }} href='https://gonano.com/en/science' target='_blank' rel='noopener noreferrer'> gonano.com</a></strong>
               </p>
               <Link href="/quote" className="btn-primary">Inquire Now</Link>
             </div>

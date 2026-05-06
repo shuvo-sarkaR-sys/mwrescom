@@ -15,11 +15,12 @@ export default function Navbar() {
   }, [])
 
   const links = [
-    { href: '/home', label: 'Home' },
+    { href: '/', label: 'Home' },
     { href: '/about', label: 'About Us' },
     { href: '/services', label: 'Services' },
     { href: '/service-area', label: 'Service Area' },
     { href: '/contact', label: 'Contact Us' },
+     
   ]
 
   return (
@@ -40,8 +41,11 @@ export default function Navbar() {
               <Link href={l.href} className={pathname === l.href ? 'active' : ''}>
                 {l.label}
               </Link>
+
             </li>
+
           ))}
+          <li><a href="https://gonano.com/en/science"  rel="noopener noreferrer">Gonano</a></li>
         </ul>
 
         <div className="nav-cta">
@@ -62,6 +66,7 @@ export default function Navbar() {
             {l.label}
           </Link>
         ))}
+        <a href="https://gonano.com/en/science"   rel="noopener noreferrer"  >Gonano</a>
         <Link href="/quote" className="cta-mobile" onClick={() => setMobileOpen(false)}>
           Get a Quote →
         </Link>
